@@ -101,8 +101,8 @@ resource "aws_security_group" "allow_web" {
 
   ingress {
     description = "SSH"
-    from_port   = 2
-    to_port     = 2
+    from_port   = 22
+    to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -143,7 +143,7 @@ resource "aws_instance" "prod-server" {
   ami               = "ami-07651f0c4c315a529"
   instance_type     = "t2.micro"
   availability_zone = "ap-southeast-1a"
-  key_name          = "main-key"
+  key_name          = "prod-key"
 
   network_interface {
     device_index         = 0
