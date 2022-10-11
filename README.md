@@ -1,4 +1,6 @@
-# simple-server-terraform
+# simple-web-server-terraform
+
+For testing purposes
 
 ## Usage
 
