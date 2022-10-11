@@ -1,0 +1,15 @@
+{
+  "name": "terraform-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "princejoogie <princejoogie@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "tf:apply": "terraform -chdir=terraform/ apply",
+    "tf:destroy": "terraform -chdir=terraform/ destroy",
+    "tf:fmt": "terraform -chdir=terraform/ fmt",
+    "tf:init": "terraform -chdir=terraform/ init",
+    "tf:plan": "terraform -chdir=terraform/ plan",
+    "tf:validate": "terraform -chdir=terraform/ validate"
+  }
+}
