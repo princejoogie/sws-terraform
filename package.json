@@ -1,7 +1,6 @@
 {
-  "name": "terraform-test",
+  "name": "simple-web-server-terraform",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "princejoogie <princejoogie@gmail.com>",
   "license": "MIT",
   "scripts": {
