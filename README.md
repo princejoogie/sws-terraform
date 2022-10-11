@@ -1,4 +1,4 @@
-# simple-web-server-terraform
+# simple-server-terraform
 
 ## Usage
 
