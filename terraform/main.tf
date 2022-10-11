@@ -62,9 +62,14 @@ resource "aws_route_table" "prod-route-table" {
 }
 
 # 4. Create a Subnet
+variable "subnet_prefix" {
+  description = "CIDR Block for the Subnet"
+  type = string
+}
+
 resource "aws_subnet" "prod-subnet" {
   vpc_id            = aws_vpc.prod-vpc.id
-  cidr_block        = "10.0.1.0/24"
+  cidr_block        = var.subnet_prefix
   availability_zone = "ap-southeast-1a"
   tags = {
     Name = "prod-subnet"
