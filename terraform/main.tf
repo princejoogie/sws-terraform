@@ -138,6 +138,10 @@ resource "aws_eip" "prod-eip" {
   }
 }
 
+output "server_public_ip" {
+  value = aws_eip.prod-eip.public_ip
+}
+
 # 9. Create EC2 Instance
 resource "aws_instance" "prod-server" {
   ami               = "ami-07651f0c4c315a529"
